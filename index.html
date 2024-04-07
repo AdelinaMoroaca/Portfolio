@@ -9,12 +9,13 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
 
     <script src="https://kit.fontawesome.com/8d24d2cfeb.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <nav id="navbar">
@@ -22,23 +23,21 @@
 
             <div>
                 <label for="toggle" class="material-icons">menu</label>
-                <!-- <label for="toggle" class="material-symbols-outlined">close</label> -->
             
-
                 <input type="checkbox" id="toggle">
                 <ul id="menu">
                     <li><a href="./index.html">Home</a></li>
-                    <li><a href="#aboutMe">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#aboutMeSection">About</a></li>
+                    <li><a href="#skillsSection">Skills</a></li>
+                    <li><a href="#portfolioSection">Portfolio</a></li>
+                    <li><a href="#contactSection">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
    
     <main>
-        <section id="home">
+        <section id="homeSection">
             <div class="homeText goDown">
                 <p>Hello There!<b>📍</b></p>
                 <h1>I am <span class="nickName">Ade</span><span class="name">lina Moroaca</span></h1>
@@ -52,12 +51,10 @@
 
             <div class="homeImg goDown">
                 <img src="./img/1648880144847.jpg" alt="Adelina's Portrait">
-            </div>
-            
-            
+            </div>   
         </section>
 
-        <section id="aboutMe">
+        <section id="aboutMeSection">
             <div class="goDownAboutMe">
                 <img src="./img/1648880144847.jpg" alt="">
             </div>  
@@ -73,93 +70,330 @@
             </div> 
         </section>
 
-        <section id="skills">
-            <div class="title">
-                titlu
-            </div>
+        <section id="skillsSection">
+            <div id="skillsContainer">
+                <div class="skillDescription">
+                    <div class="moreSkillDescription">
+                        <div class="title">
+                            <p>What I do?</p>
+                        </div>
+                        <div class="softSkill">
+                            <p>I take pride in my versatile skill set, honed through countless hours of self-learning and hands-on experience</p>
+                            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero laborum vitae voluptate asperiores numquam explicabo ipsum, quas dolores sapiente laudantium.</p> -->
+                        </div>
+                        <div class="buttons">
+                            <button>Portfolio</button>
+                            <button>Resume</button>
+                        </div>
+                     
+                    </div>
+                    
+                </div>
+               
+                <div class="gridContainer">
 
-            <div class="skillDescription">
-                <p>I take pride in my versatile skill set, honed through countless hours of self-learning and hands-on experience</p>
-                <button>Portfolio</button>
-            </div>
+                    <div class="gridSkill skillCard">
+                        <div class="frontCard">
+                           <p class="gridSkill">html</p>
+                        </div>
 
-            <div class="skillCard">
-                <div>html</div>
-                <div>css</div>
-                <div>responsive design</div>
-                <div>bootstrap</div>
-                <div>sass</div>
-                <div>tailwind</div>
-                <div>javascript</div>
-                <div>typescript</div>
-                <div>react</div>
-                <div>next.js</div>
+                        <div class="backCard">
+                            <p class="gridSkill">html</p>
+                        </div>
+              
+                    </div>
+
+                    <div class="gridSkill skillCard">
+                        <div class="frontCard">
+                            <p class="gridSkill">css</p>
+                        </div>
+
+                        <div class="backCard">
+                            <p class="gridSkill">css</p>
+                        </div>
+              
+                    </div>
+
+                    <div class="gridSkill skillCard">
+                        <div class="frontCard">
+                            <p class="gridSkill">responsive design front</p>
+                        </div>
+
+                        <div class="backCard">
+                            <p class="gridSkill">responsive design back</p>
+                        </div>
+              
+                    </div>
+
+                    <div class="gridSkill skillCard">
+                        <div class="frontCard">
+                            <p class="gridSkill">tailwind</p>
+
+                        </div>
+
+                        <div class="backCard">
+                            <p class="gridSkill">tailwind</p>
+                        </div>
+              
+                    </div>
+
+                    <div class="gridSkill skillCard">
+                        <div class="frontCard">
+                            <p class="gridSkill">sass</p>
+                        </div>
+
+                        <div class="backCard">
+                            <p class="gridSkill">sass</p>
+                        </div>
+              
+                    </div>
+
+                    <div class="gridSkill skillCard">
+                        <div class="frontCard">
+                            <p class="gridSkill">bootstrap</p>
+
+                        </div>
+
+                        <div class="backCard">
+                            <p class="gridSkill">bootstrap</p>
+                        </div>
+              
+                    </div>
+
+                    <div class="gridSkill skillCard">
+                        <div class="frontCard">
+                            <p class="gridSkill">javascript</p>
+
+                        </div>
+
+                        <div class="backCard">
+                            <p class="gridSkill">javascript</p>
+
+                        </div>
+              
+                    </div>
+
+                    <div class="gridSkill skillCard">
+                        <div class="frontCard">
+                            <p class="gridSkill">typescript</p>
+
+                        </div>
+
+                        <div class="backCard">
+                            <p class="gridSkill">typescript</p>
+                        </div>
+              
+                    </div>
+
+                    <div class="gridSkill skillCard">
+                        <div class="frontCard">
+                            <p class="gridSkill">react</p>
+
+                        </div>
+
+                        <div class="backCard">
+                            <p class="gridSkill">react</p>
+
+                        </div>
+              
+                    </div>
+
+                </div>
             </div>
-        
         </section>
 
-        <section id="portfolio">
+        <section id="portfolioSection">
             <div class="projectCard">
-                <div class="imgPresentation">
+                <img src="./img/1648880144847.jpg" class="imgCard" alt="">
 
-                </div>
+                <div class="contentCard">
+                    <div class="cardTitle">
+                        <h1 id="projectTitle">Titlu</h1>
+                    </div>
 
-                <div class="projectCard">
-                    <div class="pTitle"></div>
-                    <div class="pDescription"></div>
-                    <div class="pTechnology"></div>
-                    <div class="pCodeDemo"></div>
+                    <div class="cardDescription">
+                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
+                    </div>
+                    
+                    <div class="cardTechnology">
+                        <button class="cardTechnologyBtn">React</button>
+                        <button class="cardTechnologyBtn">SASS</button>
+                        <button class="cardTechnologyBtn">Tailwin</button>
+                    </div>
+                    
+                    <div class="cardCodeDemo">
+                        <button id="liveDemo">
+                            <p>Live Demo</p>
+                        </button>
+
+                        <button id="gitCode">
+                            <p>Git Source</p>
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <div class="projectCard">
-                <div class="imgPresentation">
+                <img src="./img/1648880144847.jpg" class="imgCard" alt="">
 
-                </div>
+                <div class="contentCard">
+                    <div class="cardTitle">
+                        <h1 id="projectTitle">Titlu</h1>
+                    </div>
 
-                <div class="projectCard">
-                    <div class="pTitle"></div>
-                    <div class="pDescription"></div>
-                    <div class="pTechnology"></div>
-                    <div class="pCodeDemo"></div>
+                    <div class="cardDescription">
+                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
+                    </div>
+                    
+                    <div class="cardTechnology">
+                        <button class="cardTechnologyBtn">React</button>
+                        <button class="cardTechnologyBtn">SASS</button>
+                        <button class="cardTechnologyBtn">Tailwin</button>
+                    </div>
+                    
+                    <div class="cardCodeDemo">
+                        <button id="liveDemo">
+                            <p>Live Demo</p>
+                        </button>
+
+                        <button id="gitCode">
+                            <p>Git Source</p>
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <div class="projectCard">
-                <div class="imgPresentation">
+                <img src="./img/1648880144847.jpg" class="imgCard" alt="">
 
-                </div>
+                <div class="contentCard">
+                    <div class="cardTitle">
+                        <h1 id="projectTitle">Titlu</h1>
+                    </div>
 
-                <div class="projectCard">
-                    <div class="pTitle"></div>
-                    <div class="pDescription"></div>
-                    <div class="pTechnology"></div>
-                    <div class="pCodeDemo"></div>
+                    <div class="cardDescription">
+                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
+                    </div>
+                    
+                    <div class="cardTechnology">
+                        <button class="cardTechnologyBtn">React</button>
+                        <button class="cardTechnologyBtn">SASS</button>
+                        <button class="cardTechnologyBtn">Tailwin</button>
+                    </div>
+                    
+                    <div class="cardCodeDemo">
+                        <button id="liveDemo">
+                            <p>Live Demo</p>
+                        </button>
+
+                        <button id="gitCode">
+                            <p>Git Source</p>
+                        </button>
+                    </div>
                 </div>
             </div>
 
             <div class="projectCard">
-                <div class="imgPresentation">
+                <img src="./img/1648880144847.jpg" class="imgCard" alt="">
 
-                </div>
+                <div class="contentCard">
+                    <div class="cardTitle">
+                        <h1 id="projectTitle">Titlu</h1>
+                    </div>
 
-                <div class="projectCard">
-                    <div class="pTitle"></div>
-                    <div class="pDescription"></div>
-                    <div class="pTechnology"></div>
-                    <div class="pCodeDemo"></div>
+                    <div class="cardDescription">
+                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
+                    </div>
+                    
+                    <div class="cardTechnology">
+                        <button class="cardTechnologyBtn">React</button>
+                        <button class="cardTechnologyBtn">SASS</button>
+                        <button class="cardTechnologyBtn">Tailwin</button>
+                    </div>
+                    
+                    <div class="cardCodeDemo">
+                        <button id="liveDemo">
+                            <p>Live Demo</p>
+                        </button>
+
+                        <button id="gitCode">
+                            <p>Git Source</p>
+                        </button>
+                    </div>
                 </div>
             </div>
+
+            <div class="projectCard">
+                <img src="./img/1648880144847.jpg" class="imgCard" alt="">
+
+                <div class="contentCard">
+                    <div class="cardTitle">
+                        <h1 id="projectTitle">Titlu</h1>
+                    </div>
+
+                    <div class="cardDescription">
+                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
+                    </div>
+                    
+                    <div class="cardTechnology">
+                        <button class="cardTechnologyBtn">React</button>
+                        <button class="cardTechnologyBtn">SASS</button>
+                        <button class="cardTechnologyBtn">Tailwin</button>
+                    </div>
+                    
+                    <div class="cardCodeDemo">
+                        <button id="liveDemo">
+                            <p>Live Demo</p>
+                        </button>
+
+                        <button id="gitCode">
+                            <p>Git Source</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projectCard">
+                <img src="./img/1648880144847.jpg" class="imgCard" alt="">
+
+                <div class="contentCard">
+                    <div class="cardTitle">
+                        <h1 id="projectTitle">Titlu</h1>
+                    </div>
+
+                    <div class="cardDescription">
+                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
+                    </div>
+                    
+                    <div class="cardTechnology">
+                        <button class="cardTechnologyBtn">React</button>
+                        <button class="cardTechnologyBtn">SASS</button>
+                        <button class="cardTechnologyBtn">Tailwin</button>
+                    </div>
+                    
+                    <div class="cardCodeDemo">
+                        <button id="liveDemo">
+                            <p>Live Demo</p>
+                        </button>
+
+                        <button id="gitCode">
+                            <p>Git Source</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+           
         </section>
 
-        <section id="contact">
+        <section id="contactSection">
             <p>contact</p>
         </section>
 
     </main>
 
     <footer>
-        footer
+        <p>footer</p>
     </footer>
 </body>
 </html>
