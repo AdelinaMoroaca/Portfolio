@@ -535,7 +535,7 @@ footer {
     to {top: 30px;}
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 768px){
     #navbar ul{
         display: none;
         width: 100%;
@@ -545,12 +545,14 @@ footer {
         align-items: center;
         justify-content: center;
         height: calc(100vh - 60px); 
+
     }
 
     #navbar ul li {
         text-align: center;
         font-size: 3rem;
-        border-bottom: 1px solid var(--yellow-10);
+        border-bottom: 1px solid var(--amber-100);
+    
     }
     
     #navbar label{
@@ -563,7 +565,7 @@ footer {
         left: 0;
         right: 0;
         top: 60px;
-        background-color: var(--blue-10);
+        /* background-color: white; */
     }
 
     #toggle:checked  + #menu {
@@ -572,9 +574,166 @@ footer {
         left: 0;
         right: 0;
         top: 60px;
-        background-color: var(--blue-10);
+        background-color: rgba(0, 0, 0, 0.911);
+   
+
     }
 
+    #homeSection {
+        /* width: 100%; */
+        max-width: 700px;
+        border: 3px solid red;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    #homeSection .homeImg > img{
+        margin-top: -200px;
+        max-width: 200px;
+        border: 3px solid red;  
+    }
+
+    #homeSection .homeText{
+        width: 100%;
+        max-width: 500px;
+        max-height: 300px;
+        border: 3px solid red;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    #homeSection .homeText h1{
+        font-size: 2em;
+    }
+
+    #homeSection .homeText > h1.jobTitle {
+        text-align:center;
+        font-size: 2em;
+    }
+
+    #homeSection .homeText > h1.jobTitle > span {
+        margin: 2px;
+        padding: 10px;
+        text-align: center;
+    
+    }
+
+    #homeSection .homeText > .homeDescription {
+        text-align:center;
+        font-size: 1em;
+    }
+
+    #homeSection .homeText .socialMedia{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+    }
+
+    #aboutMeSection {
+        max-width: 480px;
+        border: 2px solid var(--black-100);
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        background-color: #313030;
+    }
+
+    #aboutMeSection .aboutMeDecription{
+        margin-top: 50px;
+        max-width: 450px;
+        display: flex;
+    }
+
+    #aboutMeSection img{
+        max-width: 300px;
+        max-height: 300px;
+        border: 1px solid var(--amber-100);
+       
+    } 
+
+    #aboutMeSection {
+        max-width: 480px;
+        border: 2px solid var(--black-100);
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 20px;
+        background-color: #313030;
+    }
+
+    #skillsSection {
+        max-height: 2500px;
+
+        max-width: 500px;
+        border: 3px solid pink;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 5px; */
+    }
+    #skillsSection #skillsContainer {
+        margin-top: 80px;
+       
+
+        max-width: 500px;
+        height: auto;
+        border: 3px solid red;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #skillsSection #skillsContainer > .gridContainer{
+        /* width: 100%; */
+        max-width: 400px;
+        display: grid;
+        grid-template-columns: 100px 100px;
+        /* grid-template-rows: 50px 50px; */
+
+        /* grid-template-columns: repeat(auto-fill, minmax(50px, 1fr)); */
+    
+        /* height: 750px; */
+        /* width: 450px; */
+        max-height: 4500px;
+
+        column-gap: 100px;
+        row-gap: 10px;
+        border: 1px solid green;
+        /* idei */
+        /* position: non; */
+
+       
+    }
+
+    /* #skillsSection #skillsContainer > .gridContainer > .gridSkill{ */
+        /* width: 100%; */
+        /* height: 50px; */
+        /* width: 80px; */
+        /* width:200px; */
+        /* height: 110px; */
+       
+    /* } */
+
+    #portfolioSection {
+        /* margin-top: 50px; */
+        max-width: 550px;
+        /* display: flex; */
+        border: 1px solid greenyellow;
+    }
+
+    #portfolioSection .projectCard{
+        display: flex;
+        flex-direction: column;
+       
+        border: 1px solid greenyellow;
+    }
+
+    #portfolioSection .projectCard > img{
+        max-width: 100%;
+    }
 }
 
 
