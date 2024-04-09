@@ -108,6 +108,23 @@ body {
     cursor: pointer;
 }
 
+#scroll-watcher {
+    position: fixed;
+    height: 2px;
+    top: 0;
+    background-color: var(--amber-100);
+    z-index: 10;
+    width: 100%;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scroll-watcher linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-watcher {
+    to { scale: 1 1; }
+}
+
 /* MAIN SECTION */
 main {
     flex-grow: 1;
