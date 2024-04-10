@@ -1,0 +1,51 @@
+/* ABOUT SECTION */
+#aboutMeSection {
+    background-color: var(--black-100);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    color: var(--black-10);
+    width: 99.4vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0% 0% 18% 88% / 70% 50% 30% 25%;
+    padding: 10px;
+    margin-bottom: 10%;
+    gap: 100px;
+}
+
+#aboutMeSection div{
+    padding: 30px;
+}
+
+#aboutMeSection img{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+}
+
+.aboutMeDecription{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 800px;
+    height: 500px;
+}
+
+.aboutMeDecription h1, h2, h4{
+    font-weight: 100;
+}
+
+.aboutMeDecription h1, span.color {
+    color: var(--amber-100);
+}
+
+.aboutMeDecription h2 span {
+    border-bottom: 1px solid var(--white-50);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.aboutMeDecription h2 {
+    margin-bottom: 10px;
+}
