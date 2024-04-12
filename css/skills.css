@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px salmon solid;
     /* height: 80vh; */
     /* width: 85vw;  */
     /* padding: 3px; */
@@ -10,7 +11,7 @@
 
 #skillsContainer {
     height: 550px;
-    width: 1500px;
+    width: 1100px;
 
     display: flex;
     align-items: center;
@@ -18,15 +19,19 @@
     gap: 50px;
     margin-top: 150px;
     margin-bottom: 80px;
+ 
+
 }
 
 .skillDescription {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* width: 500px;
+    width: 400px;
     height: 300px;
-    padding: 30px; */
+    padding: 30px;
+    border: 2px green solid;
+
 }
 
 .skillDescription p {
@@ -67,62 +72,56 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-.gridContainer {
+.containerGrid{
+    width: 900px;
+    height: 400px;
+    padding: 30px;
+    background-color: rgba(255, 0, 0, 0.048);
+    border: 2px solid red;
     display: grid;
-    /* grid-template-columns: 200px 200px 200px; */
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-
-    height: 450px;
-    width: 750px;
-    gap: 55px;
-
-    /* idei */
-    position: relative;
+    gap: 15px;
 }
 
-.gridSkill {
-    padding: 20px;
-    text-align: center;
-    border-radius: 25px;
+.containerCard:hover > .card{
+    cursor: pointer;
+    transform: rotateX(180deg);
+
+}
+
+.card{
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
-
-    /* idei */
+    /* border: 1px solid black; */
     position: relative;
-    width:200px;
-    height: 110px;
+    height: 100%;
+    width: 100%;
+    transition: transform 1500ms;
     transform-style: preserve-3d;
-    transition: all 0.5s ease;
 }
 
-.gridSkill:hover {
-    transform: rotateX(180deg);
-}
-
-.frontCard {
+.frontCard, .backCard {
     position: absolute;
-    width:200px;
-    height: 110px;
+    height: 100%;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     backface-visibility: hidden;
-    background: var(--amber-100);
-    color: var(--white-100);
-    border-radius: 25px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
-.backCard {
-    position: absolute;
-    width:200px;
-    height: 110px;
-    backface-visibility: hidden;
-    background: var(--amber-100);
-    color: var(--black-100);
+.frontCard  {
+    background-color: var(--amber-100);
+}
+
+.backCard  {
+    background-color: var(--white-100);
+    border-radius: 2rem;
     transform: rotateX(180deg);
-    background-color: var(--white-10);
-    color: var(--black-80);
-    border-radius: 25px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    
 }
