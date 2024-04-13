@@ -9,9 +9,8 @@
 
 
     /* Color palette */
-    --blue-100: #395ca7;
     --amber-100: #f9b000; /*new*/
-    --amber-90: #f9ae0038; /*new*/
+    --amber-90: #f9ae009f; /*new*/
 
     --orange-50: #fdb849;
     --primary_color: #f9b000;
@@ -20,6 +19,18 @@
     --primary_color-5a: rgba(249, 176, 0, 0.5);
     --primary_color-35a: rgba(249, 176, 0, 0.35);
     --primary_color-2a: rgba(249, 176, 0, 0.2);
+
+
+    --green-100: #3fa34d;
+
+    /* 3FA34D
+    7FB446
+    BFC540
+    FFD639
+    FBAF00
+
+    fb6107 */
+
     --white-100: #ffffff; /*new*/
     --white-50: #f2f2f2;
     --white-10: #e5e5e5;
@@ -39,6 +50,7 @@
     
 }
 
+
 body {
     display: flex;
     flex-direction: column;
@@ -51,70 +63,23 @@ body {
     /* width: 100vw; */
 }
 
-/* NAVBAR SECTION */
-#navbar {
-    background-color: var(--white-100);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;    color: var(--black-80);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10%;
-    height: 60px;
+/*****   HEADER SECTION   *****/
+header {
+    height: 62px;
     width: 100%;
-    position: fixed;
+    position: sticky;
     z-index: 1;
-  
-    /* idei proprii */  
-    /* position: sticky;
     top: 0;
-    z-index: 1; */
 }
 
-#navbar a#logo {
-    color: var(--black-100);
-    font-size: 2em;
-}
+/* SCROLL WATCHER */
 
-#navbar ul {
-    display: flex;
-    list-style-type: none;
-    
-}
-
-#navbar ul li {
-    padding: 8px 12px;
-    
-}
-
-#navbar ul li a {
-    color: var(--black-50);
-    
-}
-
-#menu li:first-child a {
-    color: var(--amber-100);  
-}
-
-#navbar ul li a:hover {
-    color: var(--orange-50);    
-}
-
-#navbar input[type='checkbox'] {
-    display: none;  
-}
-
-#navbar label{
-    display: none;  
-    font-size: 24px;
-    cursor: pointer;
-}
-
-#scroll-watcher {
+header > #scroll-watcher {
     position: fixed;
     height: 2px;
     top: 0;
     background-color: var(--amber-100);
-    z-index: 10;
+    z-index: 1;
     width: 100%;
     scale: 0 1;
     transform-origin: left;
@@ -124,6 +89,85 @@ body {
 
 @keyframes scroll-watcher {
     to { scale: 1 1; }
+}
+
+/* NAVBAR */
+#navbar {
+    background-color: var(--white-100);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+    width: 100%;
+}
+
+#navbar a#logo {
+    color: var(--black-100);
+    font-size: 2em;
+}
+
+#navbar > a#logo > p > span.logoName{
+    letter-spacing: 8px;
+}
+
+#navbar > a#logo > p > span {
+    color: var(--amber-100);
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#navbar > a#logo > p > span.span {
+    margin-right: 5px;
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    padding: 8px 12px;
+    list-style-type: none; 
+}
+
+#navbar ul li a {
+    color: var(--black-90); 
+}
+
+#navbar ul li a:hover {
+    color: var(--amber-100);
+    font-weight: bold;
+}
+
+#menu li:first-child a {
+    color: var(--amber-100);  
+}
+
+.linkUnderline{
+    cursor: cell;
+}
+
+.linkUnderline:after {
+    display:block;
+    content: '';
+    transform: scaleX(0);  
+    transition: transform 550ms ease-in-out;
+    padding-bottom:5px ;
+}
+
+.linkUnderline:hover:after{ 
+    transform: scaleX(1);
+    border-bottom: 2px solid var(--black-50);  
+    padding-bottom: 3px ;
+}
+
+#navbar input[type='checkbox'] {
+    display: none;  
+}
+
+#navbar label.material-icons {
+    display: none;  
+    font-size: 24px;
 }
 
 /* MAIN SECTION */
@@ -151,26 +195,21 @@ main {
     to {scale: 1; opacity: 1;}
 } */
 
-.aboutMeDecription {
+/* .aboutMeDecription { */
 
-    animation: fade-out linear;
+    /* animation: fade-out linear;
     animation-timeline: view(); 
     animation-range-start: exit -50px;
-border: 3px solid red;
+border: 3px solid red; */
     /* animation-range-end: contain; */
 
-}
-@keyframes fade-out {
+/* } */
+/* @keyframes fade-out {
     to {opacity: 0;}
-} 
+}  */
 
 /* ------------------------------------------------------------------------------------------------------ */
 
-
-/* CONTACT SECTION */
-#contactSection{
- background-color: #395ca7;
-}
 
 /* FOOTER */
 footer {
@@ -189,21 +228,23 @@ footer {
 
 @keyframes goDown {
     from {top: -200px;}
-    to {top: 30px;}
+    to {top: -20px;}
 }
 
-.goDownSlow{
-    /* de verificat informatii despre position */
+/* .goDownSlow{
     position: relative;  
     animation-name: goDownSlow;
-    animation-duration: 5s;
+    animation-duration: 4s;
     animation-fill-mode: forwards;
 }
 
 @keyframes goDownSlow {
     from {top: -200px;}
     to {top: 30px;}
-}
+} */
+
+
+/* ------------------------------------------------------------------------------------------------------ */
 
 @media screen and (max-width: 768px){
     #navbar ul{

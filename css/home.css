@@ -1,59 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-color: #FDC500 #fff;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    text-decoration: none;
+
+
+    /* Color palette */
+    --amber-100: #f9b000; /*new*/
+    --amber-90: #f9ae009f; /*new*/
+
+    --orange-50: #fdb849;
+    --primary_color: #f9b000;
+    --amber-80: rgba(249, 176, 0, 0.85);
+    --amber-70: rgba(249, 176, 0, 0.7);
+    --primary_color-5a: rgba(249, 176, 0, 0.5);
+    --primary_color-35a: rgba(249, 176, 0, 0.35);
+    --primary_color-2a: rgba(249, 176, 0, 0.2);
+
+
+    --green-100: #3fa34d;
+
+    /* 3FA34D
+    7FB446
+    BFC540
+    FFD639
+    FBAF00
+
+    fb6107 */
+
+    --white-100: #ffffff; /*new*/
+    --white-50: #f2f2f2;
+    --white-10: #e5e5e5;
+    --black-100: #000000; /*new*/
+    --black-90: #222222; /*new*/
+    --black-80: #313030;  /*new*/
+    --black-50: #747474; /*new*/
+    --black-45: #74747477; /*new*/
+    --black-40: #7474741b; /*new*/
+
+    --black-10: #d2d2d2; /*new*/
+
+
+    font-family: "Lato", sans-serif;
+
+        /* font-weight: 100; */
+    
+}
+
 /* HOME SECTION */
 #homeSection {
     padding: 5%;
     height: 100vh;
     width: 80vw;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     gap: 8%;
     color: var(--black-50); 
+    /* border: 1px solid blueviolet; */
 }
 
+/* HOME TEXT SECTION */
 .homeText{
    display: flex;
    flex-direction: column;
-   /* align-items: center; */
-   width: 60%;
-   font-size: 1.5em;
+   justify-content: center;
+   align-items:flex-start;
+   width: 700px;
+   height: 400px;
+   /* font-size: 1.5em; */
+   /* border: 1px solid red; */
 }
 
 .homeText h1{
-   font-size: 3em;
+   font-size: 2.7em;
    color: var(--black-50);
+   line-height: 1.3;
+   font-weight: bolder;
+}
+
+.homeText span.nickName,
+.homeText span.name {
+    letter-spacing: 6px;
+    /* color: var(--amber-100); */
 }
 
 .homeText span.nickName{
     color: var(--amber-100);
+    padding-left: 5px;
 }
 
 .homeText span.name{
     color: var(--black-45);
 }
 
+.homeText > h1{
+    width: 100%;
+    font-size: 2.7rem;
+}
+
 .homeText h1.jobTitle{
+    letter-spacing: 3px;
     color: var(--orange-50);
 }
 
 .homeText h1.jobTitle > span{
     color: var(--black-100);
-    border-left: 1px solid var(--black-100);
+    border-left: 1px solid var(--black-90);
     padding-left: 4%;
     margin-left: 5px;
+    letter-spacing: 5px;
 }
 
 .homeText > p{
-    font-size: 1.2em;
+    font-size: 1.5em;
+
+}
+
+.homeText > p.greeting{
+    padding-bottom: 1%;
+    letter-spacing: 3%;
+}
+
+.homeText > p > span.companyName{
+    font-weight: bold;
+    color: var(--green-100);
+    text-transform: uppercase;
+}
+
+.material-symbols-outlined{
+    transform: scaleX(-1);
+    color: var(--amber-100);
+}
+
+.homeText > p.homeDescription span.jobTitle{
+    font-weight: bold;
+    color: var(--green-100);
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
 }
 
 .homeText > p.homeDescription{
-    padding-left: 10%;
-    font-size: 1.2em;
+    padding-left: 7%;
+    font-size: 1.3em;
+    line-height: 1.4;
 }
 
 .homeText .socialMedia{
-    padding-left: 10%;
-    
+    padding-top: 1%;
+    padding-left: 9%;
+    display: flex;
 }
 
 .homeText .socialMedia a svg{
@@ -69,15 +169,25 @@
 
 }
 
+/* IMAGE SECTION */
+.homeImg{
+    /* border: 1px solid green; */
+}
+
 .homeImg img {
-    width: 400px;
-    border-radius: 10%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
 
 .homeImg img:hover {
-    width: 400px;
-    border-radius: 50%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    /* width: 300px;
+    height: 3%;
+    border-radius: 50%; */
+    box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.3);
 
 }
