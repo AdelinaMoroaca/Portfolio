@@ -141,7 +141,7 @@
     font-weight: bold;
     color: var(--green-100);
     letter-spacing: 1px;
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
 }
 
 .homeText > p.homeDescription{
@@ -170,9 +170,6 @@
 }
 
 /* IMAGE SECTION */
-.homeImg{
-    /* border: 1px solid green; */
-}
 
 .homeImg img {
     width: 300px;

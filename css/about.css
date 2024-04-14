@@ -1,3 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scrollbar-color: #FDC500 #fff;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    text-decoration: none;
+
+
+    /* Color palette */
+    --amber-100: #f9b000; /*new*/
+    --amber-90: #f9ae009f; /*new*/
+
+    --orange-50: #fdb849;
+    --primary_color: #f9b000;
+    --amber-80: rgba(249, 176, 0, 0.85);
+    --amber-70: rgba(249, 176, 0, 0.7);
+    --primary_color-5a: rgba(249, 176, 0, 0.5);
+    --primary_color-35a: rgba(249, 176, 0, 0.35);
+    --primary_color-2a: rgba(249, 176, 0, 0.2);
+
+
+    --green-100: #3fa34d;
+
+    /* 3FA34D
+    7FB446
+    BFC540
+    FFD639
+    FBAF00
+
+    fb6107 */
+
+    --white-100: #ffffff; /*new*/
+    --white-50: #f2f2f2;
+    --white-10: #e5e5e5;
+    --black-100: #000000; /*new*/
+    --black-90: #222222; /*new*/
+    --black-80: #313030;  /*new*/
+    --black-50: #747474; /*new*/
+    --black-45: #74747477; /*new*/
+    --black-40: #7474741b; /*new*/
+
+    --black-10: #d2d2d2; /*new*/
+
+
+    font-family: "Lato", sans-serif;
+
+        /* font-weight: 100; */
+    
+}
+
 /* ABOUT SECTION */
 #aboutMeSection {
     background-color: var(--black-100);
@@ -6,46 +58,116 @@
     width: 99.4vw;
     height: 95vh;
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     border-radius: 0% 0% 18% 88% / 70% 50% 30% 25%;
-    padding: 10px;
+    /* padding: 10px; */
     margin-bottom: 10%;
-    gap: 100px;
+    gap: 50px;
 }
 
 #aboutMeSection div{
-    padding: 30px;
+    padding: 10px;
+    display: flex;
 }
 
-#aboutMeSection img{
-    border-radius: 50%;
-    width: 500px;
+.imgContainer {
+    position: relative;
+    border: 1px solid red;
     height: 500px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.aboutMeDecription{
+.mainPhoto {
+    width: 100%;
+    border-radius: 15%;
+    width: 450px;
+    height: 330px;
+    border: 3px solid var(--black-50);
+    object-fit: cover;
+    -webkit-transform: scaleX(-1);  
+    transition: 1s;
+}
+
+.mainPhoto:hover {
+    z-index: 2;
+    width: 470px;
+    height: 400px;
+}
+
+.secondBottom {
+    border-radius: 50%;
+    height: 220px;
+    width: 300px;
+    position: absolute;
+    left: -120px;
+    top: 330px;
+    border: 3px solid var(--green-100);
+    z-index: 1;
+    -webkit-transform: scaleX(-1);  
+    object-fit: cover;
+    transition: 2s;
+}
+
+.secondBottom:hover {
+    position: absolute;
+    left: -120px;
+    top: 280px;
+    height: 270px;
+    width: 370px;
+}
+
+
+.secondLeft {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    right: -80px;
+    top: -5px;
+    border: 3px solid var(--amber-90);
+    z-index: 1;
+    -webkit-transform: scaleX(-1);  
+    object-fit: cover;
+    transition: 2s;
+}
+
+.secondLeft:hover {
+    position: absolute;
+    right: -10px;
+    top: -5px;
+    width: 330px;
+    height: 280px;
+}
+
+.aboutMeDescription{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     width: 800px;
     height: 500px;
+    border: 1px solid green;
 }
 
-.aboutMeDecription h1, h2, h4{
+.aboutMeDescription h1, h2, h4{
     font-weight: 100;
 }
 
-.aboutMeDecription h1, span.color {
+.aboutMeDescription h1, span.color {
     color: var(--amber-100);
 }
 
-.aboutMeDecription h2 span {
+.aboutMeDescription h2 span {
     border-bottom: 1px solid var(--white-50);
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
 
-.aboutMeDecription h2 {
+.aboutMeDescription h2 {
     margin-bottom: 10px;
 }
+

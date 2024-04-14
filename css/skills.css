@@ -61,7 +61,6 @@
 #skillsContainer {
     height: 550px;
     width: 1100px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,16 +73,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 400px;
-    height: 300px;
+    width: 500px;
+    height: 400px;
     padding: 30px;
-    border: 2px green solid;
-
 }
 
 .skillDescription p {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     color: var(--black-80);
 }
 
@@ -91,32 +88,67 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px;
-    width: 500px;
-    height: 400px;
-    padding: 30px;
+    /* justify-content: center; */
+    gap: 10px;
+    padding: 5px;
 }
 
 .moreSkillDescription > .buttons {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 15px;
 }
 
-.moreSkillDescription > .buttons > button {
+.moreSkillDescription > .buttons > a  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--black-90);
+    color: var(--white-100);
+    /* border: 2px solid var(--black-90); */
+}
+
+.moreSkillDescription > .buttons > a > button.resumeBtn,
+.moreSkillDescription > .buttons > a > button.portfolioBtn  {
     text-align: center;
-    width: 250px;
-    height: 30px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: var(--green-100);
+    color: var(--white-100);
+    border: 1px solid var(--black-100);
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 100%;
+    letter-spacing: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+/* .moreSkillDescription > .buttons > button.portfolioBtn {
+    text-align: center;
+    width: 150px;
+    height: 50px;
     border-radius: 20px;
     background-color: var(--black-90);
     color: var(--white-100);
     border: 1px solid var(--black-90);
-}
+
+} */
  
-.moreSkillDescription > .buttons > button:hover{
+.moreSkillDescription > .buttons > button:hover,
+.moreSkillDescription > .buttons > a > button.resumeBtn:hover{
+    color: var(--black-90);
+
     background-color: var(--amber-100);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+    /* box-shadow: 0px 9px 30px rgba(255, 149, 5, 0.3); */
 }
 
 .containerGrid{
@@ -194,4 +226,13 @@
     border-radius: 2rem;
     transform: rotateX(180deg);
     color: var(--green-100);
+    text-transform: uppercase;
+}
+
+.tailwindSkill .backCard h2,
+.responsiveDesignSkill .backCard h2,
+.bootstrapSkill .backCard h2,
+.javascriptSkill .backCard h2{
+    font-size: 21px;
+    font-weight: bolder;
 }
