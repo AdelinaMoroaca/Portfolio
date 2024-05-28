@@ -1,488 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- iconita -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200" />
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/skills.css">
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Ojuju:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/portfolio.css" />
     <!-- <link rel="stylesheet" href="css/contact.css"> -->
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <div id="scroll-watcher">
+      <div id="scroll-watcher"></div>
 
+      <nav id="navbar">
+        <a id="logo" href="./index.html"
+          ><p>
+            <span class="logoName">Adelin</span><span class="span">a</span>'s
+            Portfolio
+          </p></a
+        >
+
+        <div>
+          <label for="toggle" class="material-icons">menu</label>
+
+          <input type="checkbox" id="toggle" />
+
+          <ul id="menu">
+            <li><a href="./index.html" class="linkUnderline">Home</a></li>
+            <li><a href="#skillsSection" class="linkUnderline">Skills</a></li>
+            <li><a href="#aboutMeSection" class="linkUnderline">About</a></li>
+            <li>
+              <a href="#portfolioSection" class="linkUnderline">Portfolio</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="homeSection">
+        <div class="homeImg goDown">
+          <img src="./img/1648880144847.jpg" alt="Adelina's Portrait" />
+        </div>
+        <div class="homeText goDown">
+          <p class="greeting">
+            Hello <span class="companyName">XXX</span> team!
+            <span class="material-symbols-outlined"> waving_hand </span>
+          </p>
+          <h1>
+            I am <span class="nickName">Ade</span
+            ><span class="name">lina Moroaca</span>
+          </h1>
+          <h1 class="jobTitle">Front-End<span>Developer</span></h1>
+          <p class="homeDescription">
+            A passionate Front-End Developer based in Romania, Timisoara ready
+            to join your team as a<span class="jobTitle"> XXX Position</span>
+            that you are looking for!
+          </p>
+          <div class="socialMedia">
+            <a
+              aria-label="linkedin"
+              rel="noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/adelina-moroaca/"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="tabler-icon tabler-icon-brand-linkedin"
+              >
+                <path
+                  d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                ></path>
+                <path d="M8 11l0 5"></path>
+                <path d="M8 8l0 .01"></path>
+                <path d="M12 16l0 -5"></path>
+                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+              </svg>
+            </a>
+            <a
+              aria-label="github"
+              rel="noreferrer"
+              target="_blank"
+              href="https://github.com/AdelinaMoroaca"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="tabler-icon tabler-icon-brand-github"
+              >
+                <path
+                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skillsSection">
+        <div id="skillsContainer">
+          <div class="skillDescription">
+            <div class="moreSkillDescription">
+              <div class="title">
+                <p>What I do?</p>
+              </div>
+
+              <div class="softSkill">
+                <p>
+                  I show to you my TECH STACK in honed through countless hours
+                  of self-learning and hands-on experience
+                </p>
+                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero laborum vitae voluptate asperiores numquam explicabo ipsum, quas dolores sapiente laudantium.</p> -->
+              </div>
+
+              <div class="buttons">
+                <a href="/img/Adelina Moroaca Resume Epam.pdf" download>
+                  <button class="buttons resumeBtn">Resume</button>
+                </a>
+
+                <a href="#portfolioSection">
+                  <button class="buttons portfolioBtn">Portfolio</button>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="containerGrid">
+            <div class="containerCard">
+              <div class="card">
+                <div class="frontCard">
+                  <img
+                    class="skill"
+                    src="https://skillicons.dev/icons?i=html"
+                    alt="skill-icon"
+                  />
+                  <h3>html</h3>
+                </div>
+
+                <div class="backCard">
+                  <h1>< html ></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerCard">
+              <div class="card">
+                <div class="frontCard">
+                  <img
+                    class="skill"
+                    src="https://skillicons.dev/icons?i=css"
+                    alt="skill-icon"
+                  />
+
+                  <h3>css</h3>
+                </div>
+
+                <div class="backCard">
+                  <h1>< css ></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerCard">
+              <div class="card responsiveDesignSkill">
+                <div class="frontCard responsiveDesign">
+                  <div class="responsiveSkills">
+                    <span class="material-symbols-outlined"> devices </span>
+                  </div>
+
+                  <h3>responsive design</h3>
+                </div>
+
+                <div class="backCard">
+                  <h2>< responsive ></h2>
+                  <h2>< design ></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerCard">
+              <div class="card tailwindSkill">
+                <div class="frontCard">
+                  <img
+                    class="skill"
+                    src="https://skillicons.dev/icons?i=tailwind"
+                    alt="skill-icon"
+                  />
+                  <h3>tailwind</h3>
+                </div>
+
+                <div class="backCard">
+                  <h2>< tailwind ></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerCard">
+              <div class="card bootstrapSkill">
+                <div class="frontCard">
+                  <img
+                    class="skill"
+                    src="https://skillicons.dev/icons?i=bootstrap"
+                    alt="skill-icon"
+                  />
+
+                  <h3>bootstrap</h3>
+                </div>
+
+                <div class="backCard">
+                  <h2>< bootstrap ></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerCard">
+              <div class="card">
+                <div class="frontCard">
+                  <img
+                    class="skill"
+                    src="https://skillicons.dev/icons?i=sass"
+                    alt="skill-icon"
+                  />
+
+                  <h3>sass</h3>
+                </div>
+
+                <div class="backCard">
+                  <h1>< sass ></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerCard">
+              <div class="card javascriptSkill">
+                <div class="frontCard">
+                  <img
+                    class="skill"
+                    src="https://skillicons.dev/icons?i=javascript"
+                    alt="skill-icon"
+                  />
+
+                  <h3>JavaScript</h3>
+                </div>
+
+                <div class="backCard">
+                  <h2>< javascript ></h2>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerCard">
+              <div class="card">
+                <div class="frontCard">
+                  <img
+                    class="skill"
+                    src="https://skillicons.dev/icons?i=git"
+                    alt="skill-icon"
+                  />
+
+                  <h3>Git</h3>
+                </div>
+
+                <div class="backCard">
+                  <h1>< git ></h1>
+                </div>
+              </div>
+            </div>
+
+            <div class="containerCard">
+              <div class="card">
+                <div class="frontCard">
+                  <img
+                    class="skill"
+                    src="https://skillicons.dev/icons?i=netlify"
+                    alt="skill-icon"
+                  />
+
+                  <h3>Netlify</h3>
+                </div>
+
+                <div class="backCard">
+                  <h1>< Netlify ></h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutMeSection">
+        <div class="imgContainer">
+          <img class="mainPhoto"src="./img/animals.jpg" alt="">
+          <img class="secondLeft" src="./img/working.jpg" alt="">
+          <!-- <img class="mainPhoto" src="./img/" alt="" /> -->
+          <!-- <img class="secondLeft" src="./img/" alt="" /> -->
+          <!-- <img class="secondBottom" src="./img/" alt=""> -->
         </div>
 
-        <nav id="navbar">
-            <a id="logo" href="./index.html"><p><span class="logoName">Adelin</span><span class="span">a</span>'s Portfolio</p></a>
+        <div class="goDownAboutMe aboutMeDescription">
+          <h1>Hi</h1>
+          <h2><span> MY NAME IS</span> ADELINA MOROACA</h2>
+          <h3>In my professional journey, I thrive as a Front-End Developer dedicated to delivering top-notch online solutions.</h3>
+          <h3>My expertise in <span class="color">HTML</span>, <span class="color">CSS</span>, <span class="color">JAVASCRIPT</span>, and performance optimization, make me a valuable asset to any digital project.</h3>
 
-            <div>
-                <label for="toggle" class="material-icons">menu</label>
-            
-                <input type="checkbox" id="toggle">
-                
-                <ul id="menu">
-                    <li><a href="./index.html" class="linkUnderline">Home</a></li>
-                    <li><a href="#skillsSection" class="linkUnderline">Skills</a></li>
-                    <li><a href="#aboutMeSection" class="linkUnderline">About</a></li>
-                    <li><a href="#portfolioSection" class="linkUnderline">Portfolio</a></li>
-        
-                </ul>
-            </div>
-        </nav>
-    </header>
-   
-    <main>
-        <section id="homeSection">
-            <div class="homeImg goDown">
-                <img src="./img/1648880144847.jpg" alt="Adelina's Portrait">
-            </div> 
-            <div class="homeText goDown">
-                <p class="greeting">Hello 
-                    <span class="companyName">XXX</span> team! 
-                    <span class="material-symbols-outlined">
-                        waving_hand
-                        </span>
-                </p>
-                <h1>I am <span class="nickName">Ade</span><span class="name">lina Moroaca</span></h1>
-                <h1 class="jobTitle">Front-End<span>Developer</span></h1>
-                <p class="homeDescription">A passionate Front-End Developer based in Romania, Timisoara ready to join your team as a<span class="jobTitle"> XXX Position</span> that you are looking for!</p>
-                <div class="socialMedia">
-                    <a aria-label="linkedin" rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/adelina-moroaca/"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-linkedin"><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path><path d="M8 11l0 5"></path><path d="M8 8l0 .01"></path><path d="M12 16l0 -5"></path><path d="M16 16v-3a2 2 0 0 0 -4 0"></path></svg></a>
-                    <a aria-label="github" rel="noreferrer" target="_blank" href="https://github.com/AdelinaMoroaca"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-brand-github"><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a>
-                </div>
-            </div>
-        </section>
+          <h3>Beyond the code, I'm equally passionate about pets and animals. The tranquil rhythm of staying in nature with animals can be
+          mental break to recharge the batteries from my digital life, providing unique perspectives that enrich my work and my soul.</h4>
+          <!-- <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+            tenetur?
+          </h4>
+          <h4>
+            Lorem ipsum dolor sit amet
+            <span class="color">consectetur</span> consectetur adipisicing elit.
+            Et ipsum veritatis <span class="color">veritatis</span> porro cum
+            magnam molestiasadipisicing neque id autem omnis quia.
+          </h4>
+          <h4>
+            Lorem ipsum <span class="color">adipisicing</span> adipisicing elit.
+            ecusandae cumque, dolores libero esse? Quas maiores saepe deleniti
+            consectetur veritatis libero dolorem molestiae beatae ad ipsa ipsam
+            officia quia suscipit eum hic pariatur, ducimus minima possimus, ut
+            nemo modi assumenda error. Fugit nulla eaque doloribus!
+          </h4>
+          <h4>Lorem, ipsum dolor.</h4> -->
+        </div>
+      </section>
 
-        <section id="skillsSection">
-            <div id="skillsContainer">
-                <div class="skillDescription">
-                    <div class="moreSkillDescription">
-                        <div class="title">
-                            <p>What I do?</p>
-                        </div>
-
-                        <div class="softSkill">
-                            <p>I show to you my TECH STACK in honed through countless hours of self-learning and hands-on experience</p>                            <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero laborum vitae voluptate asperiores numquam explicabo ipsum, quas dolores sapiente laudantium.</p> -->
-                        </div>
-
-                        <div class="buttons">
-                            <a href="/img/Adelina Moroaca Resume Epam.pdf" download>
-                                <button class="buttons resumeBtn">Resume</button>
-                            </a>
-
-                            <a href="#portfolioSection">
-                                <button class="buttons portfolioBtn">Portfolio</button>
-                            </a>
-                        
-                        </div>
-                     
-                    </div>
-                    
-                </div>
-
-                      
-                <div class="containerGrid">
-                    <div class="containerCard">
-                        <div class="card">
-                            <div class="frontCard">
-                                <img class="skill" src="https://skillicons.dev/icons?i=html" alt="skill-icon">
-                                <h3>html</h3>
-                            </div>
-        
-                            <div class="backCard">
-                                <h1> < html > 
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="containerCard">
-                        <div class="card">
-                            <div class="frontCard">
-                                <img  class="skill" src="https://skillicons.dev/icons?i=css" alt="skill-icon">
-
-                                <h3>css</h3>
-                            </div>
-        
-                            <div class="backCard">
-                                <h1> < css > </h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="containerCard">
-                        <div class="card responsiveDesignSkill">
-                            <div class="frontCard responsiveDesign">
-                                <div class="responsiveSkills">
-                                    <span class="material-symbols-outlined">
-                                            devices
-                                    </span>
-                                </div>
-                             
-                            <h3>responsive design</h3>
-
-                            </div>
-        
-                            <div class="backCard">
-                                <h2> < responsive > </h2>
-                                <h2> < design > </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="containerCard">
-                        <div class="card tailwindSkill">
-                            <div class="frontCard">
-                                <img class="skill" src="https://skillicons.dev/icons?i=tailwind" alt="skill-icon">
-                                <h3>tailwind</h3>
-        
-                            </div>
-        
-                            <div class="backCard">
-                                <h2>  < tailwind > </h2>
-                           </div>
-                        </div>
-                    </div>
-
-                    <div class="containerCard">
-                        <div class="card bootstrapSkill">
-                            <div class="frontCard">
-                                <img class="skill" src="https://skillicons.dev/icons?i=bootstrap" alt="skill-icon">
-
-                                <h3>bootstrap</h3>
-        
-                            </div>
-        
-                            <div class="backCard">
-                                <h2>< bootstrap > </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="containerCard">
-                        <div class="card">
-                            <div class="frontCard">
-                                <img class="skill" src="https://skillicons.dev/icons?i=sass" alt="skill-icon">
-
-                                <h3>sass</h3>
-        
-                            </div>
-        
-                            <div class="backCard">
-                                <h1> < sass > </h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="containerCard">
-                        <div class="card javascriptSkill">
-                            <div class="frontCard">
-                                <img  class="skill" src="https://skillicons.dev/icons?i=javascript" alt="skill-icon">
-
-                                <h3>JavaScript</h3>
-        
-                            </div>
-        
-                            <div class="backCard">
-                                <h2>< javascript ></h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="containerCard">
-                        <div class="card">
-                            <div class="frontCard">
-                                <img class="skill" src="https://skillicons.dev/icons?i=git" alt="skill-icon">
-
-                                <h3>Git</h3>
-
-                            </div>
-        
-                            <div class="backCard">
-                                <h1> < git > </h1>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="containerCard">
-                        <div class="card">
-                            <div class="frontCard">
-                                <img class="skill" src="https://skillicons.dev/icons?i=netlify" alt="skill-icon">
-
-                                <h3>Netlify</h3>
-        
-                            </div>
-        
-                            <div class="backCard">
-                                <h1> < Netlify > </h1>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                </div>
-                    
-
-            </div>
-        </section>
-
-        <section id="aboutMeSection">
-            <div class="imgContainer">
-                <!-- <img class="mainPhoto"src="./img/animals.jpg" alt=""> -->
-                <!-- <img class="secondLeft" src="./img/working.jpg" alt=""> -->
-                <img class="mainPhoto"src="./img/" alt="">
-                <img class="secondLeft" src="./img/" alt="">
-                <!-- <img class="secondBottom" src="./img/" alt=""> -->          
-            </div> 
-
-            <div class="goDownAboutMe aboutMeDescription">
-                <h1>Hi</h1>
-                <h2><span> MY NAME IS</span> ADELINA MOROACA</h2>
-                <!-- <h3>In my professional journey, I thrive as a Front-End Developer dedicated to delivering top-notch online solutions.</h3> -->
-                <!-- <h3>My expertise in <span class="color">HTML, CSS, JAVASCRIPT</span>, and performance optimization, make me a valuable asset to any digital project.</h3> -->
-
-                   <!-- <h3>Beyond the code, I'm equally passionate about pets and animals. The tranquil rhythm of staying in nature with animals can be  -->
-                    <!-- mental break to recharge the batteries from my digital life, providing unique perspectives that enrich my work and my soul.</h4> -->
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, tenetur?</h4>
-                <h4>Lorem ipsum dolor sit amet <span class="color">consectetur</span> consectetur adipisicing elit. Et ipsum veritatis <span class="color">veritatis</span> porro cum magnam molestiasadipisicing neque id autem omnis quia.</h4>
-                <h4>Lorem ipsum <span class="color">adipisicing</span> adipisicing elit. ecusandae cumque, dolores libero esse? Quas maiores saepe deleniti consectetur veritatis libero dolorem molestiae beatae ad ipsa ipsam officia quia suscipit eum hic pariatur, ducimus minima possimus, ut nemo modi assumenda error. Fugit nulla eaque doloribus!</h4>
-                <h4>Lorem, ipsum dolor.</h4>
-            </div> 
-        </section>
-
-        <section id="portfolioSection">
-            <div class="projectCard">
-                <img src="./img/" class="imgCard" alt="">
-
-
-                <div class="contentCard">
-                    <div class="cardTitle">
-                        <h1 id="projectTitle">Title</h1>
-                    </div>
-
-                    <div class="cardDescription">
-                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
-                    </div>
-                    
-                    <div class="cardTechnology">
-                        <button class="cardTechnologyBtn">HTML</button>
-                        <button class="cardTechnologyBtn">CSS</button>
-                        <button class="cardTechnologyBtn">Javascript</button>
-                    </div>
-                    
-                    <div class="cardCodeDemo">
-                        <div id="liveDemo">
-                            <a href="https://digital-planner-adelina-moroaca.netlify.app/">Live Demo</a>
-                        </div>
-     
-                        <div id="gitCode">
-                            <a href="https://github.com/AdelinaMoroaca/Digital-Planner/">Git Source</a>
-                        </div>
-
-                        <!-- <button id="gitCode">
-                            <p>Git Source</p>
-                        </button> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectCard">
-                <img src="./img/" class="imgCard" alt="">
-
-                <div class="contentCard">
-                    <div class="cardTitle">
-                        <!-- <h1 id="projectTitle">Calculator</h1> -->
-                        <h1 id="projectTitle">Title</h1>
-
-                    </div>
-
-                    <div class="cardDescription">
-                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
-                    </div>
-                    
-                    <div class="cardTechnology">
-                        <button class="cardTechnologyBtn">HTML</button>
-                        <button class="cardTechnologyBtn">CSS</button>
-                        <button class="cardTechnologyBtn">JavaScript</button>
-                    </div>
-                    
-                    <div class="cardCodeDemo">
-                        <div class="liveDemo">
-                            <a href="https://main--calculator-adelina-moroaca.netlify.app/">Live Demo</a>
-                        </div>
-
-                        <div id="gitCode">
-                            <a href="https://github.com/AdelinaMoroaca/Calculator-The-Odin-Project/">Git Source</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectCard">
-                <img src="./img/" class="imgCard" alt="">
-
-                <div class="contentCard">
-                    <div class="cardTitle">
-                        <!-- <h1 id="projectTitle">Etch-A-Sketch</h1> -->
-                        <h1 id="projectTitle">Title</h1>
-                    </div>
-
-                    <div class="cardDescription">
-                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
-                    </div>
-                    
-                    <div class="cardTechnology">
-                        <button class="cardTechnologyBtn">HTML</button>
-                        <button class="cardTechnologyBtn">CSS</button>
-                        <button class="cardTechnologyBtn">JavaScript</button>
-                    </div>
-                    
-                    <div class="cardCodeDemo">
-                        <div id="liveDemo">
-                            <a href="https://etch-a-sketch-adelina-moroaca.netlify.app/">Live Demo</a>
-                        </div>
-                        <div id="gitCode">
-                            <a href="https://github.com/AdelinaMoroaca/Etch-A-Sketch-The-Odin-Project/">Git Source</a>
-                        </div>
-                        <!-- <button id="gitCode">
-                            <p>Git Source</p>
-                        </button> -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="projectCard">
-                <img src="./img/1648880144847.jpg" class="imgCard" alt="">
-
-                <div class="contentCard">
-                    <div class="cardTitle">
-                        <h1 id="projectTitle">Titlu</h1>
-                    </div>
-
-                    <div class="cardDescription">
-                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
-                    </div>
-                    
-                    <div class="cardTechnology">
-                        <button class="cardTechnologyBtn">React</button>
-                        <button class="cardTechnologyBtn">SASS</button>
-                        <button class="cardTechnologyBtn">Tailwin</button>
-                    </div>
-                    
-                    <div class="cardCodeDemo">
-                        <button id="liveDemo">
-                            <p>Live Demo</p>
-                        </button>
-
-                        <button id="gitCode">
-                            <p>Git Source</p>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectCard">
-                <img src="./img/1648880144847.jpg" class="imgCard" alt="">
-
-                <div class="contentCard">
-                    <div class="cardTitle">
-                        <h1 id="projectTitle">Titlu</h1>
-                    </div>
-
-                    <div class="cardDescription">
-                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
-                    </div>
-                    
-                    <div class="cardTechnology">
-                        <button class="cardTechnologyBtn">React</button>
-                        <button class="cardTechnologyBtn">SASS</button>
-                        <button class="cardTechnologyBtn">Tailwin</button>
-                    </div>
-                    
-                    <div class="cardCodeDemo">
-                        <button id="liveDemo">
-                            <p>Live Demo</p>
-                        </button>
-
-                        <button id="gitCode">
-                            <p>Git Source</p>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectCard">
-                <img src="./img/1648880144847.jpg" class="imgCard" alt="">
-
-                <div class="contentCard">
-                    <div class="cardTitle">
-                        <h1 id="projectTitle">Titlu</h1>
-                    </div>
-
-                    <div class="cardDescription">
-                        <p class="cardDescriptionText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt dolor illum maxime similique quaerat.</p>
-                    </div>
-                    
-                    <div class="cardTechnology">
-                        <button class="cardTechnologyBtn">React</button>
-                        <button class="cardTechnologyBtn">SASS</button>
-                        <button class="cardTechnologyBtn">Tailwin</button>
-                    </div>
-                    
-                    <div class="cardCodeDemo">
-                        <button id="liveDemo">
-                            <p>Live Demo</p>
-                        </button>
-
-                        <button id="gitCode">
-                            <p>Git Source</p>
-                        </button>
-                    </div>
-                </div>
-            </div> -->
-
-           
-        </section>
-
-        <!-- <section id="contactSection">
-            <div class="container">
-                <div class="card">
-                    <div class="front">
-
-                    </div>
-
-                    <div class="back">
-                        <h1>back of card</h1>
-                        <p>Aditional information</p>
-                    </div>
-                </div>
-            </div>
-            
-        </section> -->
-
+      <section id="portfolioSection"> 
+        <!-- <section id="portfolioSection" class="cards">  -->
+        <ul class="cards">
+            <li>
+              <a href="" class="projectCard">
+                <img class="card__image" src="./img/holiday.jpg" alt="" />
       
-
+                <div class="card__overlay">
+                  <div class="card__header">
+                    <!-- <div class="card__arc"></div> -->
+                    <svg class="card__arc" xmlns="http://www.w3.org/2000/svg">
+                      <path />
+                    </svg>
+                    <div class="card__thumb">
+                      <p>live demo</p>
+                    </div>
+                    <div class="card__thumb">
+                      <p>Git Source</p>
+                    </div>
+                    <!-- <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" /> -->
+                    <div class="card__header-text">
+                      <h3 class="card__title">Project title</h3>
+                      <span class="card__status">Technology : html /css/react</span>
+                    </div>
+                  </div>
+                  <p class="card__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Asperiores, blanditiis?
+                  </p>
+                </div>
+              </a>
+            </li>
+      
+            <li>
+              <!-- <a href="" class="card">
+                  <img src="./img/holiday.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">        
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                      <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
+                      <div class="card__header-text">
+                        <h3 class="card__title">kim Cattrall</h3>
+                        <span class="card__status">3 hours ago</span>
+                      </div>
+                    </div>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                  </div>
+                </a> -->
+            </li>
+      
+            <li>
+              <!-- <a href="" class="card">
+                  <img src="https://i.imgur.com/oYiTqum.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+                      <img class="card__thumb" src="https://i.imgur.com/7D7I6dI.png" alt="" />
+                      <div class="card__header-text">
+                        <h3 class="card__title">Jessica Parker</h3>
+                        <span class="card__tagline">Lorem ipsum dolor sit amet consectetur</span>            
+                        <span class="card__status">1 hour ago</span>
+                      </div>
+                    </div>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                  </div>
+                </a> -->
+            </li>
+      
+            <!-- <li>
+                <a href="" class="card">
+                  <img src="https://i.imgur.com/2DhmtJ4.jpg" class="card__image" alt="" />
+                  <div class="card__overlay">
+                    <div class="card__header">
+                      <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+                      <img class="card__thumb" src="https://i.imgur.com/sjLMNDM.png" alt="" />
+                      <div class="card__header-text">
+                        <h3 class="card__title">kim Cattrall</h3>
+                        <span class="card__status">3 hours ago</span>
+                      </div>          
+                    </div>
+                    <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+                  </div>
+                </a>
+              </li>     -->
+          </ul>
+      </section>
     </main>
-
-   <footer>
-        <h4>Copyright © 2024 AdelinaMoroaca</h4>
+    <button id="btn-scroll-to-top">UP</button>
+    <footer>
+      <h4>Copyright © 2024 AdelinaMoroaca</h4>
     </footer>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

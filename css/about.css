@@ -64,13 +64,15 @@
     border-radius: 0% 0% 18% 88% / 70% 50% 30% 25%;
     /* padding: 10px; */
     margin-bottom: 10%;
-    gap: 50px;
+    /* gap: 50px; */
 }
 
 #aboutMeSection div{
     padding: 10px;
     display: flex;
 }
+
+
 
 .imgContainer {
     position: relative;
@@ -125,11 +127,11 @@
 
 .secondLeft {
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     position: absolute;
-    right: -80px;
-    top: -5px;
+    right: -30px;
+    top: -10px;
     border: 3px solid var(--amber-90);
     z-index: 1;
     -webkit-transform: scaleX(-1);  
@@ -150,9 +152,10 @@
 .aboutMeDescription{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    width: 800px;
-    height: 500px;
+    gap: 5px;
+    /* justify-content: space-around; */
+    width: 500px;
+    /* height: 500px; */
     /* border: 1px solid green; */
 }
 
