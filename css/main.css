@@ -144,7 +144,7 @@ header > #scroll-watcher {
 }
 
 .linkUnderline{
-    cursor: cell;
+    cursor: pointer;
 }
 
 .linkUnderline:after {

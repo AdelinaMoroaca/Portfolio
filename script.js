@@ -14,3 +14,7 @@ document.addEventListener('scroll', function(){
         scrollToTopBtn.style.visibility = 'hidden';
     }
 })
+
+liveDemo.addEventListener('click', function(){
+    
+})
