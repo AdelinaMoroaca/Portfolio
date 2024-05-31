@@ -213,16 +213,30 @@ border: 3px solid red; */
 
 /* Scroll up btn */
 #btn-scroll-to-top{
-    width: 2rem;
-    height: 2rem;
+    width: 2.8rem;
+    height: 2.8rem;
     position: fixed;
     left: 2.4rem;
     bottom: 2.4rem;
-    padding: 1rem;
-    border-radius: 20%;
+    /* padding: 1rem; */
+    border-radius: 50%;
     border: 1px solid black;
     visibility: hidden;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;   
+    background-color: #3fa34d;
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-scroll-to-top:hover{
+    background-color: #f9b000;
+    color: #000000;
 }
 
 /* FOOTER */
